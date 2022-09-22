@@ -1,0 +1,51 @@
+<div class="bg-gray-100 min-h-full">
+
+  <div
+    class="relative flex flex-col flex-0 justify-center w-full h-16 sm:h-20 md:h-36 overflow-hidden z-49 shadow dark:shadow-none print:hidden">
+
+    <div class="relative dark flex flex-auto justify-center w-full px-4 md:px-8 bg-gray-800 dark:bg-gray-900">
+      <div class="flex items-center w-full max-w-screen-xl h-16 sm:h-20">
+        <div class="flex items-center">
+          <img src="/assets/images/logo/logo-on-dark.svg" alt="Logo image" class="h-11 mb-2">
+          <span class="text-gray-100 text-2xl ml-4">Frontend DEV</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-auto justify-center px-4 md:px-8 bg-white dark:bg-gray-700">
+      <div class="relative flex items-center w-full max-w-screen-xl h-16">
+
+        <div>
+          <a matRipple class="flex items-center relative navigation-item text-gray-700" routerLink="/"
+            routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <mat-icon class="navigation-item-icon">home</mat-icon>
+            <div class="navigation-item-title">Dashboard</div>
+          </a>
+        </div>
+        <div>
+          <a matRipple class="flex items-center relative navigation-item text-gray-700" routerLink="/users"
+            routerLinkActive="active">
+            <mat-icon class="navigation-item-icon">group</mat-icon>
+            <div class="navigation-item-title">Users</div>
+          </a>
+        </div>
+        <div>
+          <a matRipple class="flex items-center relative navigation-item text-gray-700" routerLink="/posts"
+            routerLinkActive="active">
+            <mat-icon class="navigation-item-icon">pages</mat-icon>
+            <div class="navigation-item-title">Posts</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-auto justify-center w-full sm:p-6 md:p-8">
+    <div
+      class="flex flex-col flex-auto w-full max-w-screen-xl mx-auto sm:shadow-lg sm:rounded-lg sm:overflow-hidden bg-default">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

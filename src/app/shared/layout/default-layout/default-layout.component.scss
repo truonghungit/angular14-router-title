@@ -1,0 +1,27 @@
+.navigation-item {
+  justify-content: flex-start;
+  min-height: 48px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 16px;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 8px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #e2e3e5;
+  }
+
+  &.active {
+    background-color: #e2e3e5;
+  }
+}
+
+.navigation-item-icon {
+  margin-right: 12px;
+}
+
+.navigation-item-title {
+  line-height: 23px;
+}
